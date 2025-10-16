@@ -28,8 +28,11 @@ public class Ejercicio4 {
 		
 		}
 		
+		//Hago la media utilizando el contador
+		suma = suma / contador;
+		
 		//Le muestro al usuario la suma y el contador
-		System.out.println("La suma es: " + suma);
+		System.out.println("La media es: " + suma);
 		System.out.println("La cantidad de números introducidos son: " + contador);
 		
 		
