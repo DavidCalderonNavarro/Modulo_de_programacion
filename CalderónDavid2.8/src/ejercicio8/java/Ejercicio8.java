@@ -50,7 +50,7 @@ public class Ejercicio8 {
 		for (contador = 1; contador <=5; contador++) {
 			
 			System.out.println(" ");
-			System.out.print("Dime la distancia de la ruta " + contador + ": ");
+			System.out.print("Dime la distancia de la ruta " + contador + " en km: ");
 			distancia = datos.nextDouble();
 			suma = suma + distancia;
 			

@@ -32,7 +32,7 @@ public class Ejercicio5 {
 				
 			}else if (num < 0){
 				
-				sumamenos = sumamenos+ num;
+				sumamenos = sumamenos + num;
 				contadormenos++;
 				
 			}else {
