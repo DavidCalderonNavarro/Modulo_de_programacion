@@ -1,13 +1,13 @@
-/*Descripción: Programa que cuenta los numeros con arrays y los muestra
+/*Descripción: Programa que suma 10 numeros alojados en un arrays
  * Autor: David Calderón Navarro
  * Fecha: 23/10/2025
  */
 
-package ejercicio1.java;
+package ejercicio2.java;
 
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		
@@ -15,6 +15,7 @@ public class Ejercicio1 {
 		
 		//Declaro la variable
 		int num[] = new int[10];
+		int suma = 0;
 		
 		for (int contador = 0; contador < 10;contador++) {
 			
@@ -25,11 +26,11 @@ public class Ejercicio1 {
 		
 		for (int i = 0; i < 10; i++) {
 			
-			System.out.println(num[i]);
+			suma = suma + num[i];//Voy sumando numero por numero
 			
 		}
-		
-		
+		//Muestro la suma
+		System.out.println("La suma es: " + suma);
 		
 	}
 
