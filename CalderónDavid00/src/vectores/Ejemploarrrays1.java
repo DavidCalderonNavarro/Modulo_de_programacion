@@ -1,15 +1,15 @@
-/*Descripción:Primer programa arrays
- * Autor: David Calderón Navarro
- * Fecha: 17/10/2025
+/*Descripción: Primer programa con arrays
+ * Autor:David Calderón Navarro
+ * Fecha:17/10/2025
  */
 
 package vectores;
 
-public class Ejemploarrays1 {
+public class Ejemploarrrays1 {
 
 	public static void main(String[] args) {
 		
-final int TAMAYIO = 25;
+		final int TAMAYIO = 25;
 		
 		int[] numeros;//Declaramos array de enteros
 		numeros = new int[TAMAYIO];//Instanciamos el array
