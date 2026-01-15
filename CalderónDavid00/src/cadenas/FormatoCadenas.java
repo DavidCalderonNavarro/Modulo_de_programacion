@@ -15,7 +15,7 @@ public class FormatoCadenas {
 		String cadena = String.format("Nombre: %s  //  Edad: %d ", nombre, edad);
 		System.out.println(cadena);
 		
-		System.out.printf("Nombre: %s  //  Edad: %d  // Altura: %.2f  //  Indice de masa corporal: %.3f", nombre, edad, altura, indice);
+		System.out.printf("Nombre: %s  //  Edad: %d  // Altura: %.1f  //  Indice de masa corporal: %.3f", nombre, edad, altura, indice);
 		
 		
 	}
