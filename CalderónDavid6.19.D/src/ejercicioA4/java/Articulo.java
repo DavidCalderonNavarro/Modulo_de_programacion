@@ -121,5 +121,61 @@ public class Articulo {
 		}
 		
 	}
+	
+	 public void imprime() {
+	        System.out.printf(
+	            "Producto: %s | Precio: %.2f€ | IVA: %d%% | Stock: %d | Precio con IVA: %.2f€%n",
+	            nombre, precio, iva, cuantosQuedan, getPVP());
+	    }
+	 
+	 public double getPVP() {
+		 
+	        return precio * (1 + iva / 100.0);
+	    }
+	 
+	 public double getPVPDescuento(double descuento) {
+	        
+		 double precioDescuento = precio * (1 - descuento / 100.0);
+	     return precioDescuento * (1 + iva / 100.0);
+	     
+	    }
+	 
+	 public boolean vender(short cantidad) {
+	        
+		 boolean puedevender;
+		 
+		 if (cantidad > 0 && cuantosQuedan >= cantidad) {
+			 
+	            cuantosQuedan -= cantidad;
+	            puedevender = true;
+	            
+	        } else {
+	        	
+	            puedevender = false;
+	            
+	        }
+		 
+		 return puedevender;
+		 
+	    }
+	 
+	 public boolean almacenar(short cantidad) {
+		 
+		 boolean puedealmacenar;
+		 
+	        if (cantidad > 0) {
+	        	
+	            cuantosQuedan += cantidad;
+	            puedealmacenar = true;
+	            
+	        } else {
+	        	
+	            puedealmacenar = false;
+	        }
+	        
+	        return puedealmacenar;
+	        
+	    }
+
 
 }

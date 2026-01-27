@@ -1,4 +1,4 @@
-/*Descripción: Declaro dos atributos y un constructor Punto
+/*Descripción: Declaro dos atributos, un constructor Punto y metodos getters y setters
  * Autor:David Calderón Navarro
  * Fecha:16/01/2026
  */
@@ -9,8 +9,8 @@ public class Punto {
 	
 	//Atributo
 
-	int x;
-	int y;
+	private int x;
+	private int y;
 	
 	//Constructor
 	
@@ -18,6 +18,32 @@ public class Punto {
 		
 		this.x = x;
 		this.y = y;
+		
+	}
+	
+	//Metodos
+	
+	public int getX() {
+		
+		return this.x;
+		
+	}
+	
+	public int getY() {
+		
+		return this.x;
+		
+	}
+	
+	public void setX(int x) {
+		
+		this.x = x;
+		
+	}
+	
+	public void setY(int y) {
+		
+		this.x = y;
 		
 	}
 	

@@ -1,6 +1,6 @@
 /*Descripción: Declaro cuatro atributos, un constructor Rectangulo y metodos getters y setters
  * Autor:David Calderón Navarro
- * Fecha:16/01/2026
+ * Fecha:27/01/2026
  */
 
 package ejercicioA3;
@@ -129,6 +129,35 @@ public class Rectangulo {
 
 	    return ancho * alto;
 	    
+	}
+	
+	public void imprime() {
+	    
+		System.out.printf("Coordenadas: (%d,%d),(%d,%d)%nPerímetro: %d%nÁrea: %d%n%n", this.x1, this.y1, this.x2, this.y2, this.getPerimetro(), this.getArea());
+	
+	}
+	
+	public void setX1Y1(byte x1, byte y1) {
+		
+		this.x1 = x1;
+		this.y1 = y1;
+		
+	}
+	
+	public void setX2Y2(byte x2, byte y2) {
+		
+		this.x2 = x2;
+		this.y2 = y2;
+		
+	}
+	
+	public void setAll(byte x1, byte y1, byte x2, byte y2) {
+		
+		this.x1 = x1;
+		this.y1 = y1;
+		this.x2 = x2;
+		this.y2 = y2;
+		
 	}
 	
 	

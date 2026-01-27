@@ -1,6 +1,6 @@
 /*Descripción: Instacia dos objetos y muestra su informacion
  * Autor:David Calderón Navarro
- * Fecha:19/01/2026
+ * Fecha:27/01/2026
  */
 
 package ejercicioA3;
@@ -18,25 +18,16 @@ public class Main {
 		
 		r1.setx1((byte)1);
 		r2.sety1((byte)2);
+		r1.setAll((byte)1,(byte)0,(byte)6,(byte)12);
 		
 		
 		System.out.println("Primer rectnagulo: ");
-		mostrarCoordenadas(r1);
-		System.out.println("Perimetro: " + r1.getPerimetro());
-		System.out.println("Perimetro: " + r1.getArea());
-		System.out.println(" ");
+		r1.imprime();
 		
 		System.out.println("Segundo rectnagulo: ");
-		mostrarCoordenadas(r2);
-		System.out.println("Perimetro: " + r2.getPerimetro());
-		System.out.println("Perimetro: " + r2.getArea());
+		r2.imprime();
 		
 	}
 	
-	public static void mostrarCoordenadas(Rectangulo r) {
-		
-		System.out.println("(" + r.getx1() + "," + r.gety1() + ")" + "(" + r.getx2() + "," + r.gety2() + ")");
-		
-	}
 
 }

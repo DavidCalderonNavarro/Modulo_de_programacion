@@ -1,6 +1,6 @@
 /*Descripción: Instancio dos objetos y muestro los datos
  * Autor:David Calderón Navarro
- * Fecha:26/01/2026
+ * Fecha:27/01/2026
  */
 
 package ejercicioA2;
@@ -16,11 +16,14 @@ public class Main {
 		Persona p1 = new Persona("08114685D", "David", "Calderon", 20);
 		Persona p2 = new Persona("43819043L", "Pepe", "Garcia", 27);
 		
-		p1.setnombre("Pepe");
+		p1.setnombre("Juan");
 		p2.setedad(22);
+		p2.diferenciaEdad(p1);
+		p1.esJubilado(20);
+		p1.esMayorEdad(20);
 		
-		System.out.println(p1.getnombre());
-		System.out.println(p2.getedad());
+		p1.imprime();
+		p2.imprime();
 		
 		
 	}
