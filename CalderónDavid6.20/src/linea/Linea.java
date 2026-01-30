@@ -1,3 +1,8 @@
+/*Descripción: Declaro dos atributos, un constructor Linea y metodos getters y setters
+ * Autor:David Calderón Navarro
+ * Fecha:27/01/2026
+ */
+
 package linea;
 
 public class Linea {
@@ -46,24 +51,26 @@ public class Linea {
 		
 	}
 	
-	public static void mueveArriba(double x) {
+	public static void mueveArriba(double y) {
 		
-		puntoA.setY(x + puntoA.getY());
-		puntoB.setY(x + puntoB.getY());
+		puntoA.setY(y + puntoA.getY());
+		puntoB.setY(y + puntoB.getY());
 		
 	}
 	
 	
-	public static void mueveAbajo(double x) {
+	public static void mueveAbajo(double y) {
 		
-		puntoA.setY(puntoA.getY() - x);
-		puntoB.setY(puntoB.getY() - x);
+		puntoA.setY(puntoA.getY() - y);
+		puntoB.setY(puntoB.getY() - y);
 		
 	}
 	
     public String toString() {
         return "Linea (" + puntoA + ", " + puntoB + ")";
     }
+    
+    
 	
 	
 	
