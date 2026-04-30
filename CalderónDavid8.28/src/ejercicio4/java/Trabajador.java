@@ -1,3 +1,8 @@
+/*Descripción: Clase en la que tengo cinco atributos, un constructor y varios metodos
+ * Autor:David Calderón Navarro
+ * Fecha:19/03/2026
+ */
+
 package ejercicio4.java;
 
 import java.time.LocalDate;
@@ -88,8 +93,8 @@ public class Trabajador {
 	
 	public String toString(){
 		
-		return "Nombre: " + this.nombre + " | Edad: " + this.edad + " | Sexo: " + this.sexo + " | Estado civil: " + this.estado_civil
-				+ " | Salario base: " + this.salario_base;
+		return "Nombre: " + this.nombre + "\t | Edad: " + this.edad + "\t | Sexo: " + this.sexo + "\t | Estado civil: " + this.estado_civil
+				+ "\t | Salario base: " + this.salario_base;
 		
 	}
 

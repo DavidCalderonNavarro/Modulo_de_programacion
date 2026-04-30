@@ -1,3 +1,8 @@
+/*Descripción: Clase atleta con tres atributos, un constructor y varios metodos
+ * Autor:David Calderón Navarro
+ * Fecha:16/03/2026
+ */
+
 package ejercicio1;
 
 public class Atleta implements Comparable<Atleta>{

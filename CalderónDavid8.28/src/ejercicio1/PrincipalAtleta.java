@@ -1,3 +1,8 @@
+/*Descripción: Implemento un ArrayList para hacer este ejercicio
+ * Autor:David Calderón Navarro
+ * Fecha:16/03/2026
+ */
+
 package ejercicio1;
 
 import java.util.ArrayList;

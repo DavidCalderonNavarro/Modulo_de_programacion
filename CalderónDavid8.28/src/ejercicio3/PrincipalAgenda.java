@@ -1,3 +1,9 @@
+/*Descripción: Implemento un LinkedHashSet para hacer este ejercicio de agenda
+ * Autor:David Calderón Navarro
+ * Fecha:19/03/2026
+ */
+
+
 package ejercicio3;
 
 import java.time.LocalDate;

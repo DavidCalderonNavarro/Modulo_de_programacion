@@ -45,16 +45,39 @@ public class Alumno extends Persona {
 		
 	}
 	
-	//public double mediaNotas() {
+	public double mediaNotas() {
 		
-		//double suma = 0;
+		double suma = 0;
 		
-		//for(Double i: notas) {
+		for(Double i: notas) {
 			
-			//suma += i
+			suma += i;
 			
-		//}
+		}
 		
-	//}
+		return suma / notas.size();
+		
+	}
+	
+	public boolean estaAprobado() {
+		
+		boolean aprobado = false;
+		
+		if(mediaNotas() >= 5.0) {
+			
+			aprobado = true;
+			
+		}
+		
+		return aprobado;
+		
+	}
+	
+	@Override
+	public String toString() {
+		
+		return "\nDni: " + this.dni + "| Nombre: " + this.nombre + "| Edad: " + this.edad + "| Curso: " + this.curso + "| Notas: " + this.notas;
+		
+	}
 
 }

@@ -1,7 +1,14 @@
+/*Descripción: Clase agenda con cuatro atributos, un constructor y varios metodos
+ * Autor:David Calderón Navarro
+ * Fecha:18/03/2026
+ */
+
 package ejercicio2;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
+
+import ejercicio1.Atleta;
 
 public class Agenda {
 	
@@ -31,9 +38,21 @@ public class Agenda {
 		
 	}
 	
+	public String getNombre() {
+		
+		return this.nombre;
+		
+	}
+	
 	public void setTelefono(int telf) {
 		
 		this.telefono = telf;
+		
+	}
+	
+	public int getTelf() {
+		
+		return this.telefono;
 		
 	}
 	
@@ -43,9 +62,21 @@ public class Agenda {
 		
 	}
 	
+	public String getEmail() {
+		
+		return this.email;
+		
+	}
+	
 	public void setFechaNacimiento(LocalDate fecha) {
 		
 		this.fecha_nacimiento = fecha;
+		
+	}
+	
+	public LocalDate getFechaNacimiento() {
+		
+		return this.fecha_nacimiento;
 		
 	}
 	

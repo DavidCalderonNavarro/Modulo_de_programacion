@@ -78,8 +78,6 @@ public class Ejercicio1 {
 			//Cuento los productos que va metiendo el usuario
 			numproductos++;
 			
-			datos.nextLine();
-			
 			}
 			
 		}while(!producto.equals(terminar));

@@ -1,3 +1,8 @@
+/*Descripción: Hago un compareto para mostrar de forma ordenada
+ * Autor:David Calderón Navarro
+ * Fecha:19/03/2026
+ */
+
 package ejercicio4.java;
 
 import java.util.Comparator;

@@ -103,5 +103,12 @@ public class Alumno {
 		this.fechaIngreso = fecha;
 
 	}
+	
+	public String toString() {
+		
+		return " | Codigo de alumno: " + this.codAlumno + "\n | Nombre: " + this.nombre + "\n | Apellidos: " + this.apellidos + "\n | Direccion: " + this.direccion + "\n | Telefono: "
+				+ this.telefono + "\n | Codigo de ciclo: " + this.codCiclo + "\n | Cantidad de cursos aprobados: " + this.cantidadCursosAprobados + "\n | Fecha de ingreso: " + this.fechaIngreso;
+		
+	}
 
 }

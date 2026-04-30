@@ -7,6 +7,7 @@ package ejercicio6.java;
 
 import java.time.LocalDate;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import ejercicio5.java.Poblacion;
@@ -39,25 +40,28 @@ public class PrincipalAlumno {
 
 				System.out.println("Dime el codigo del alumno: ");
 				int codigoAlumno = datos.nextInt();
-
+				datos.nextLine();
+				
 				System.out.println("Dime el nombre del alumno: ");
-				String nombre = datos.next();
+				String nombre = datos.nextLine();
 
 				System.out.println("Dime el apellidos del alumno: ");
 				String apellidos = datos.nextLine();
 
 				System.out.println("Dime la direccion del alumno: ");
-				String direccion = datos.next();
+				String direccion = datos.nextLine();
 
 				System.out.println("Dime el telefono del alumno: ");
 				int telefono = datos.nextInt();
-
+				datos.nextLine();
+				
 				System.out.println("Dime el codigo del ciclo del alumno: ");
-				String codigoCiclo = datos.next();
+				String codigoCiclo = datos.nextLine();
 
 				System.out.println("Dime la cantidad de cursos aprobados del alumno: ");
 				int cursos = datos.nextInt();
-
+				datos.nextLine();
+				
 				System.out.println("Dime la fecha de ingreso del alumno");
 				System.out.println("Año: ");
 				int anyo = datos.nextInt();
@@ -74,13 +78,68 @@ public class PrincipalAlumno {
 				llave = llave + 1;
 
 			} else if (opcion.equals("b")) {
+				
+				System.out.println("Dime el codigo del alumno: ");
+				int numUsuario = datos.nextInt();
 
+				Alumno alumno = clase.get(numUsuario);
+
+				if (alumno != null) {
+					
+				    System.out.println(alumno.toString());
+				    
+				} else {
+					
+				    System.out.println("No existe ese alumno");
+				    
+				}
+				
 			} else if (opcion.equals("c")) {
-
+				
+				System.out.println("Dime el nombre del alumno: ");
+				String nombre = datos.next();
+				
+				System.out.println("Dime los apellidos del alumno: ");
+				String apellidos = datos.nextLine();
+				
+				clase.remove(nombre);
+				
 			} else if (opcion.equals("d")) {
+				
+				System.out.println("Dime el codigo del alumno: ");
+				int numUsuario = datos.nextInt();
 
+				Alumno alumno = clase.get(numUsuario);
+				
+				System.out.println("Dime la direccion que quieres poner: ");
+				String direc = datos.nextLine();
+				
+				alumno.setDireccion(direc);
+				
+				System.out.println("Dime el telefono que quieres poner: ");
+				int telf = datos.nextInt();
+				datos.nextLine();
+				
+				alumno.setTelefono(telf);
+				
 			} else if (opcion.equals("e")) {
+				
+				System.out.println("Dime el codigo del alumno: ");
+				int numUsuario = datos.nextInt();
 
+				Alumno alumno = clase.get(numUsuario);
+				
+				System.out.println("Dime el codigo de carrera que quieres poner: ");
+				String codCarrera = datos.nextLine();
+				
+				alumno.setCodCiclo(codCarrera);
+				
+				System.out.println("Dime la cantidad de cursos que quieres poner: ");
+				int cant = datos.nextInt();
+				datos.nextLine();
+				
+				alumno.setCantidadCursosAprobados(cant);
+				
 			}
 
 		} while (!opcion.equalsIgnoreCase("f"));

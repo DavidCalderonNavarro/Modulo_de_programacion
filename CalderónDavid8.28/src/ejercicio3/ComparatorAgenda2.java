@@ -1,3 +1,8 @@
+/*Descripción: Hago un compare para mostrar de forma ordenada por nombre
+ * Autor:David Calderón Navarro
+ * Fecha:19/03/2026
+ */
+
 package ejercicio3;
 
 import java.util.Comparator;
